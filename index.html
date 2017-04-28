@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<div class="row">
+  <div class="col m6 blue">
+    <div class='card #bbdefb blue lighten-4'>
+      <h2 class="center-align">PLAYER 1</h2>
+        <div class='card center'>
+          <p id="result1">CHOSEN ITEM</p>
+        </div>
+        <center>
+          <button class='waves-effect waves-light btn rps'><i class="fa fa-hand-rock-o">  </i>Rock!</button>
+          <button class='waves-effect waves-light btn rps'><i class="fa fa-hand-paper-o">  </i>Paper!</button>
+          <button class='waves-effect waves-light btn rps'><i class="fa fa-hand-scissors-o">  </i>Scissors!</button>
+        </center>
+    </div>
+  </div>
+
+    
+
+  <div class="col m6 red">
+    <div class='card #ffcdd2 red lighten-4'>
+    <h2 class="center-align">PLAYER 2</h2>
+      <div class='card center'>
+        <p id="result2">CHOSEN ITEM</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col m12 #aa00ff purple accent-4">
+    <div class='card #ede7f6 deep-purple lighten-5'>
+      <h2 class="center-align">SCORE</h2>
+        <div class='card center'>SCORE LIST
+        </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="main.js" type="text/javascript"></script>
+</body>
+</html>
