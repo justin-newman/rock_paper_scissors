@@ -1,4 +1,4 @@
-$(document).ready(function () { 
+$(document).ready(function () {
     var win = 0;
     var loss = 0;
     var tie = 0;
@@ -19,10 +19,14 @@ $(document).ready(function () {
         if (player1 === player2) {
             ++tie;
         }
-        else if ( (player1 === 'Rock!' && player2 === 'Paper!') || (player1 === 'Paper!' && player2 === 'Scissors!') || (player1 === 'Scissors!' && player2 === 'Rock!') ) {
+        else if ( (player1 === 'Rock!' && player2 === 'Paper!') ||
+         (player1 === 'Paper!' && player2 === 'Scissors!') ||
+         (player1 === 'Scissors!' && player2 === 'Rock!') ) {
             ++loss;
         }
-        else if ( (player1 === 'Rock!' && player2 === 'Scissors!') || (player1 === 'Paper!' && player2 === 'Rock!') || (player1 === 'Scissors!' && player2 === 'Paper!') ) {
+        else if ( (player1 === 'Rock!' && player2 === 'Scissors!') ||
+        (player1 === 'Paper!' && player2 === 'Rock!') ||
+        (player1 === 'Scissors!' && player2 === 'Paper!') ) {
             ++win;
         }
         else {
@@ -47,5 +51,9 @@ $(document).ready(function () {
         player1 = $(this).text();
         computerChoice();
     });
+
+    $('.newgameBtn').click(function() {
+      location.reload(true);
+    })
 
 });

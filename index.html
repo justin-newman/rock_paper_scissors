@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class='card-panel #000000 black'>
 
 
 <div class="row">
@@ -16,27 +16,30 @@
     <div class='card #bbdefb blue lighten-4'>
       <h2 class="center-align">PLAYER 1</h2>
         <div class='card center'>
-          <p id="result1">CHOSEN ITEM</p>
+          <p id="result1">CHOOSE A WEAPON</p>
         </div>
-        <div class="card-action">
-        <center>
+        <div class="card-action center">
+
           <button class='waves-effect waves-light btn-large rps'><i class="fa fa-hand-rock-o"></i>Rock!</button>
           <button class='waves-effect waves-light btn-large rps'><i class="fa fa-hand-paper-o"></i>Paper!</button>
           <button class='waves-effect waves-light btn-large rps'><i class="fa fa-hand-scissors-o"></i>Scissors!</button>
-        </center>
+
         </div>
     </div>
   </div>
 
-    
+
 
   <div class="col m6 red">
     <div class='card #ffcdd2 red lighten-4'>
-    <h2 class="center-align">PLAYER 2</h2>
+      <h2 class="center-align">PLAYER 2</h2>
       <div class='card center'>
-        <p id="result2">CHOSEN ITEM</p>
+        <p id="result2">CHOOSING...</p>
       </div>
-      <div class="card-action">
+      <div class='card-action center'>
+        <button class='waves-effect waves-light btn-large rps newgameBtn'>New Game</button>
+
+      </div>
       </div>
     </div>
   </div>
@@ -47,7 +50,10 @@
     <div class='card #ede7f6 deep-purple lighten-5'>
       <h2 class="center-align">SCORE</h2>
         <div class='card center'>
-          <p id="score">SCORE LIST</p>
+          <p id="score">0 WINS - 0 TIES - 0 LOSSES</p>
+        </div>
+        <div class='card #ede7f6 deep-purple lighten-5 center'>
+          <button class='waves-effect waves-light btn-large rps newgameBtn'>New Game</button>
         </div>
     </div>
   </div>
